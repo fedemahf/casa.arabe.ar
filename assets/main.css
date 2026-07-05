@@ -1,21 +1,11 @@
 :root {
-    color-scheme: light dark;
-    --bg-color: #f6f7f8;
-    --text-color: #2f3234;
-    --link-color: #3a6fc2;
-    --visited-color: #6b5fa7;
-    --gray-accent-color: #dedede;
-    --font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-color: #181c20;
+    color-scheme: dark light;
+    --bg-color: #032d22;
     --text-color: #e1e2e3;
     --link-color: #7ca8df;
     --visited-color: #9a94d0;
     --gray-accent-color: #252a30;
-  }
+    --font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 body {
