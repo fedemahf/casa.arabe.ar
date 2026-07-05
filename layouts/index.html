@@ -12,7 +12,6 @@
 
 {{ define "header" }}
 <header class="section">
-    {{ partial "navigation.html" . }}
     <div id="hero" class="section">
         <h1>{{ .Params.title }}</h1>
         <p>{{ .Site.Params.description }}</p>
@@ -23,13 +22,5 @@
 {{ define "main" }}
 <main aria-role="main">
     {{ .Content }}
-    {{ partial "recent_posts.html" . }}
-    <footer id="site-footer" class="section">
-    {{ range .Site.Menus.socials }}
-        <a href="{{ .URL }}" title="{{ .Title }}" target="_blank">
-        {{- .Name -}}
-        </a>
-    {{ end }}
-    </footer>
 </main>
 {{ end }}

@@ -1,13 +1,13 @@
-baseURL = 'https://federico.mahfoud.ar/'
+baseURL = 'https://casa.arabe.ar/'
 languageCode = 'en-us'
-title = 'Federico Mahfoud'
+title = 'Centro Social Sirio - Casa Árabe'
 disableKinds = ["taxonomy", "term"]
 
 [menu]
 [[menu.main]]
-  identifier = 'home'
-  name = 'home'
-  title = 'home'
+  identifier = 'inicio'
+  name = 'inicio'
+  title = 'inicio'
   url = '/'
   weight = 10
 [[menu.main]]
