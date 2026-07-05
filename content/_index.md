@@ -5,8 +5,8 @@ date: 2026-04-08
 author: Federico Mahfoud
 ---
 
-sitio web en desarrollo
-
-contacto: [federico.mahfoud.ar](https://federico.mahfoud.ar)
-
 ![Emblema de Siria](/Emblem_of_Syria_(2025).svg)
+
+Sitio web en desarrollo.
+
+Contacto: [federico.mahfoud.ar](https://federico.mahfoud.ar)
