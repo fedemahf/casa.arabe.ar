@@ -1,5 +1,7 @@
-<h1 class="site-title">
-  <img class="site-emblem" src="{{ "images/emblem-of-syria-2025.svg" | relURL }}" alt="" width="300" height="225">
-  {{ site.Title }}
-</h1>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<div class="site-header">
+  <a class="site-title" href="{{ site.Home.RelPermalink }}">
+    <img class="site-emblem" src="{{ "images/emblem-of-syria-2025.svg" | relURL }}" alt="" width="300" height="225">
+    {{ site.Title }}
+  </a>
+  {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+</div>

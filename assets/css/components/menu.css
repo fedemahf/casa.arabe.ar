@@ -42,19 +42,3 @@
   padding-left: 1rem;
 }
 
-@media (max-width: 480px) {
-  .menu ul {
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .menu a {
-    border-bottom: none;
-    border-left: 2px solid transparent;
-  }
-
-  .menu a.active,
-  .menu a.ancestor {
-    border-left-color: var(--link);
-  }
-}

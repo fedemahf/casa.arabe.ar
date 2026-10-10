@@ -3,10 +3,27 @@ header {
   margin-bottom: 1rem;
 }
 
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  padding-top: 0.5rem;
+}
+
+/* Let the active link's underline sit on the header border */
+.site-header .menu {
+  margin-bottom: -1px;
+}
+
 .site-title {
   display: flex;
   align-items: center;
   gap: 0.5em;
+  color: var(--fg);
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 .site-emblem {
