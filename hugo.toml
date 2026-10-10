@@ -1,10 +1,10 @@
 baseURL = 'https://example.org/'
-locale = 'en-us'
-title = 'My New Hugo Project'
+locale = 'es'
+title = 'Centro Social Sirio'
 
 [menus]
   [[menus.main]]
-    name = 'Home'
+    name = 'Inicio'
     pageRef = '/'
     weight = 10
 
