@@ -9,11 +9,11 @@ buildFuture = true
     pageRef = '/'
     weight = 10
   [[menus.main]]
-    name = 'Próximos eventos'
+    name = 'Eventos'
     pageRef = '/eventos'
     weight = 20
   [[menus.main]]
-    name = 'Actividad reciente'
+    name = 'Actividad'
     pageRef = '/actividad'
     weight = 30
 

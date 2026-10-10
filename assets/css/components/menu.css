@@ -1,0 +1,60 @@
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 2px solid transparent;
+  color: var(--muted);
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.menu a:hover,
+.menu a:focus-visible {
+  color: var(--fg);
+  border-bottom-color: var(--border);
+}
+
+.menu a:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+}
+
+.menu a.active,
+.menu a.ancestor {
+  color: var(--fg);
+  border-bottom-color: var(--link);
+}
+
+.menu a.active {
+  font-weight: 600;
+}
+
+/* Nested entries: indented list under their parent */
+.menu ul ul {
+  display: block;
+  padding-left: 1rem;
+}
+
+@media (max-width: 480px) {
+  .menu ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .menu a {
+    border-bottom: none;
+    border-left: 2px solid transparent;
+  }
+
+  .menu a.active,
+  .menu a.ancestor {
+    border-left-color: var(--link);
+  }
+}
