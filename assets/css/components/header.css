@@ -30,3 +30,10 @@ header {
   height: 1.2em;
   width: auto;
 }
+
+/* On narrow screens, put the title on its own line above the menu */
+@media (max-width: 560px) {
+  .site-title {
+    order: -1;
+  }
+}
