@@ -39,3 +39,14 @@ time {
   max-width: 100%;
   height: auto;
 }
+
+.home-block + .home-block {
+  border-top: 1px solid var(--border);
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+
+main img {
+  max-width: 100%;
+  height: auto;
+}

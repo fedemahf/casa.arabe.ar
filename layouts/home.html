@@ -1,15 +1,36 @@
 {{ define "main" }}
   <img class="home-logo" src="{{ "images/emblem-of-syria-2025.svg" | relURL }}" alt="Emblema de Siria" width="300" height="225">
   {{ .Content }}
-  {{ range site.RegularPages }}
-    <section>
-      {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-      {{ $dateHuman := .Date | time.Format "2006-01-02" }}
-      <p>
-        <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time> &mdash; <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-        <br />
-        {{ .Summary }}
-      </p>
-    </section>
+  {{ with (where (where site.RegularPages "Section" "eventos") "Date" "ge" now).ByDate }}
+    <div class="home-block">
+      <h2>Próximos eventos</h2>
+      {{ range . }}
+        <section>
+          {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+          {{ $dateHuman := .Date | time.Format "2006-01-02 15:04" }}
+          <p>
+            <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time> &mdash; <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+            <br />
+            {{ .Summary }}
+          </p>
+        </section>
+      {{ end }}
+    </div>
+  {{ end }}
+  {{ with where site.RegularPages "Section" "actividad" }}
+    <div class="home-block">
+      <h2>Actividad reciente</h2>
+      {{ range . }}
+        <section>
+          {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+          {{ $dateHuman := .Date | time.Format "2006-01-02" }}
+          <p>
+            <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time> &mdash; <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+            <br />
+            {{ .Summary }}
+          </p>
+        </section>
+      {{ end }}
+    </div>
   {{ end }}
 {{ end }}

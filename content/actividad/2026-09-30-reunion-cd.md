@@ -6,11 +6,3 @@ summary = ' '
 +++
 
 Se llevó a cabo una reunión de Comisión Directiva.
-
-Contamos con la asistencia de:
-- presidente
-- vicepresidente
-- tesorero
-- revisor de cuentas
-- sindico
-- vocales

@@ -1,12 +1,21 @@
 baseURL = 'https://example.org/'
 locale = 'es'
 title = 'Centro Social Sirio'
+buildFuture = true
 
 [menus]
   [[menus.main]]
     name = 'Inicio'
     pageRef = '/'
     weight = 10
+  [[menus.main]]
+    name = 'Próximos eventos'
+    pageRef = '/eventos'
+    weight = 20
+  [[menus.main]]
+    name = 'Actividad reciente'
+    pageRef = '/actividad'
+    weight = 30
 
 [module]
   [module.hugoVersion]

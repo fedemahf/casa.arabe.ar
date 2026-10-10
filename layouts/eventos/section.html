@@ -1,0 +1,17 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  {{ range (where .Pages "Date" "ge" now).ByDate }}
+    <section>
+      {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+      {{ $dateHuman := .Date | time.Format "2006-01-02 15:04" }}
+      <p>
+        <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time> &mdash; <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        <br />
+        {{ .Summary }}
+      </p>
+    </section>
+  {{ else }}
+    <p>No hay eventos programados por el momento.</p>
+  {{ end }}
+{{ end }}
