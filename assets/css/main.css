@@ -19,7 +19,8 @@ body {
   color: var(--fg);
   font-family: sans-serif;
   line-height: 1.5;
-  margin: 1rem;
+  margin: 1rem auto;
+  padding: 0 1rem;
   max-width: 768px;
 }
 
@@ -30,4 +31,11 @@ a {
 
 time {
   color: var(--muted);
+}
+
+.home-logo {
+  display: block;
+  margin: 1rem auto;
+  max-width: 100%;
+  height: auto;
 }
