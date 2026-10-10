@@ -3,8 +3,13 @@
   {{ .Content }}
   {{ range .Pages }}
     <section>
-      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-      {{ .Summary }}
+      {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+      {{ $dateHuman := .Date | time.Format "2006-01-02" }}
+      <p>
+        <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time> &mdash; <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        <br />
+        {{ .Summary }}
+      </p>
     </section>
   {{ end }}
 {{ end }}
