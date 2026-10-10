@@ -8,11 +8,6 @@ title = 'Centro Social Sirio'
     pageRef = '/'
     weight = 10
 
-  [[menus.main]]
-    name = 'Actividad reciente'
-    pageRef = '/actividad'
-    weight = 20
-
 [module]
   [module.hugoVersion]
     extended = false
