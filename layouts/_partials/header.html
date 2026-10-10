@@ -1,2 +1,5 @@
-<h1>{{ site.Title }}</h1>
+<h1 class="site-title">
+  <img class="site-emblem" src="{{ "images/emblem-of-syria-2025.svg" | relURL }}" alt="" width="300" height="225">
+  {{ site.Title }}
+</h1>
 {{ partial "menu.html" (dict "menuID" "main" "page" .) }}

@@ -34,13 +34,6 @@ time {
   color: var(--muted);
 }
 
-.home-logo {
-  display: block;
-  margin: 1rem auto;
-  max-width: 100%;
-  height: auto;
-}
-
 .home-block + .home-block {
   border-top: 1px solid var(--border);
   margin-top: 2rem;

@@ -2,3 +2,14 @@ header {
   border-bottom: 1px solid var(--border);
   margin-bottom: 1rem;
 }
+
+.site-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.site-emblem {
+  height: 1.2em;
+  width: auto;
+}

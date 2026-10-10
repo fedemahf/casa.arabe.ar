@@ -1,5 +1,4 @@
 {{ define "main" }}
-  <img class="home-logo" src="{{ "images/emblem-of-syria-2025.svg" | relURL }}" alt="Emblema de Siria" width="300" height="225">
   {{ .Content }}
   {{ with (where (where site.RegularPages "Section" "eventos") "Date" "ge" now).ByDate }}
     <div class="home-block">
