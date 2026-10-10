@@ -14,6 +14,11 @@ title = 'My New Hugo Project'
     weight = 20
 
   [[menus.main]]
+    name = 'Actividad reciente'
+    pageRef = '/actividad'
+    weight = 20
+
+  [[menus.main]]
     name = 'Tags'
     pageRef = '/tags'
     weight = 30
